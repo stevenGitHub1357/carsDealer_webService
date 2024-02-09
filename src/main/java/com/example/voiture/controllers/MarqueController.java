@@ -13,6 +13,7 @@ import com.example.voiture.model.Marque;
 import com.example.voiture.repository.MarqueRepository;
 
 @RestController
+@CrossOrigin(origins="*", allowedHeaders = "*")
 public class MarqueController {
 
     @Autowired
