@@ -24,7 +24,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
         public CorsFilter corsFilter() {
             UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
             CorsConfiguration config = new CorsConfiguration();
-            config.addAllowedOrigin("http://localhost:3000"); // Remplacez avec votre origine React
+            config.addAllowedOrigin("*"); // Remplacez avec votre origine React
             config.addAllowedHeader("*");
             config.addAllowedMethod("*");
             source.registerCorsConfiguration("/**", config);
